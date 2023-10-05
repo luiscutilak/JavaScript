@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Seletor Classe</title>
+
+        <!--JS-->
+        <script>
+            function exibirTexto(){
+                //Abaixo informamos o nome da classe e a posição que ela si encontra.(podemos ter varias classes)
+                var campo = document.getElementsByClassName("texto")[2]
+                alert(campo.innerHTML);
+            }
+        </script>
+    </head>
+    <body>
+
+        <button onclick="exibirTexto()">Exibir Texto</button>
+
+        <h1 class="texto">Titulo em H1</h1>
+        <h2 class="texto">Titulo em H2</h2>
+        <p class="texto">Páragrafo</p>
+    </body>
+</html>
